@@ -106,7 +106,7 @@ export class ApologyComponent {
   constructor(private dialog: MatDialog, private http: HttpClient) {}
 
   openApologyDialog() {
-    this.http.get<{ message: string }>('http://localhost:8080/api/sorry').subscribe(res => {
+    this.http.get<{ message: string }>('http://apologycode.onrender.com/api/sorry').subscribe(res => {
       const dialogRef = this.dialog.open(ApologyDialogComponent, {
         data: { message: res.message },
         width: '600px',
