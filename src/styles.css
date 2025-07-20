@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+/* .custom-dialog .mat-mdc-dialog-container {
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fffafc;
+    box-shadow: 0 4x 20px rgba(0, 0, 0, 0.2);
+  } */
+  /* Global CSS - usually in src/styles.css */
+
+  
+
+  .light-pink-dialog .mdc-dialog__surface {
+    background-color: #fff0f5; /* LavenderBlush - soft pink */
+    border: 1px solid #ffc0cb; /* LightPink border */
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(255, 105, 180, 0.3); /* HotPink glow */
+    padding: 20px;
+  }
+  
+  .dialog-container {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    white-space: pre-wrap;
+    font-size: 16px;
+    color: #c2185b; /* Raspberry pink */
+    text-align: center;
+  }
+  
+  .dialog-container pre {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #ad1457; /* Deep pink */
+  }
+  
+  
+  
