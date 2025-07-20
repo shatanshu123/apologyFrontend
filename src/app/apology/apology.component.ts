@@ -115,7 +115,9 @@ export class ApologyComponent {
   
       dialogRef.afterClosed().subscribe(response => {
         if (response === 'yes' || response === 'no') {
-          this.http.post('http://localhost:8080/api/apology-response', { response })
+          // this.http.post('http://localhost:8080/api/apology-response', { response })
+          //   .subscribe(() => console.log('Response email sent.'));
+            this.http.post('apologycode.onrender.com/api/apology-response', { response })
             .subscribe(() => console.log('Response email sent.'));
         }
       });
