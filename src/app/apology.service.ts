@@ -8,6 +8,6 @@ export class ApologyService {
 
   getApologyMessage(): Observable<{ message: string }> {
    // return this.http.get<{ message: string }>('http://localhost:8080/api/sorry');
-    return this.http.get<{ message: string }>('http://apologycode.onrender.com/api/sorry');
+    return this.http.get<{ message: string }>('https://apologycode.onrender.com/api/sorry');
   }
 }

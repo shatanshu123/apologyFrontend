@@ -106,7 +106,7 @@ export class ApologyComponent {
   constructor(private dialog: MatDialog, private http: HttpClient) {}
 
   openApologyDialog() {
-    this.http.get<{ message: string }>('http://apologycode.onrender.com/api/sorry').subscribe(res => {
+    this.http.get<{ message: string }>('https://apologycode.onrender.com/api/sorry').subscribe(res => {
       const dialogRef = this.dialog.open(ApologyDialogComponent, {
         data: { message: res.message },
         width: '600px',
@@ -117,7 +117,7 @@ export class ApologyComponent {
         if (response === 'yes' || response === 'no') {
           // this.http.post('http://localhost:8080/api/apology-response', { response })
           //   .subscribe(() => console.log('Response email sent.'));
-            this.http.post('apologycode.onrender.com/api/apology-response', { response })
+            this.http.post('https://apologycode.onrender.com/api/apology-response', { response })
             .subscribe(() => console.log('Response email sent.'));
         }
       });
